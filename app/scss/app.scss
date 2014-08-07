@@ -1,0 +1,47 @@
+/* ==========================================================================
+   App Stylesheet
+   app.scss
+   ========================================================================== */
+
+
+/* Vendor Styles and Setting (foundation > settings)
+   ======================================================================== */
+@import "foundation";
+@import "settings";
+
+
+/* Mixins (User defined mixins)
+   ======================================================================== */
+
+
+/* Components
+   ======================================================================== */
+@import "components/base";
+
+$textColor: #444;
+
+body {
+    color: $textColor;
+    background: (url('../images/bg.jpg') fixed right);
+}
+
+.nav {
+    background: #fff;
+
+    .nav-bar {
+        li {
+            padding: 25px 30px;
+            float: left;
+        }
+    }
+}
+
+.contentBg {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.columns {
+    img {
+        max-height: 300px;
+    }
+}
